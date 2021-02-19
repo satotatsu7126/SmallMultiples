@@ -1,0 +1,17 @@
+#shape1 .tick text{
+   font-family: sans-serif;
+   font-size: 4px;
+}
+#shape1 .tick line{
+ display: none;
+}
+#shape1 .domain{
+ display: none;
+}
+
+/*
+#shape1{
+  background-image: url("../map.png");
+  background-repeat: no-repeat;
+  background-size: 1000px 1000px;
+}*/

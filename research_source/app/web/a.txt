@@ -1,0 +1,31 @@
+
+"""
+legend_d={}
+dataset2 = []
+for(var t = 0; t < dnumbers.length; t++){
+  legend_d["day"]=dnumbers[t];
+
+  var xScale = d3.scaleBand()
+    .rangeRound([w-80, w-80+minxwidth])
+    .padding(0.3) //棒グラフのバーとバーの間
+    .domain(dataset.map(function(d) { return d.day; }));
+
+  var yScale = d3.scaleLinear()
+    .domain([0, ysc*(gy0-gy1)])
+    .range([gy0, gy1]);
+
+  var xAxis = d3.axisBottom(xScale).tickSizeInner(0);
+  var yAxis = d3.axisLeft(yScale).tickSizeInner(0);
+
+  // 4. 軸の表示
+  svg.append("g")
+    .attr("transform", "translate(" + 0 + "," + (h+20 - ydpadding) + ")")
+    .call(xAxis);
+
+  svg.append("g")
+    .attr("transform", "translate(" + (w+20 + xlpadding) + "," + 0 + ")")
+    .call(yAxis);
+
+}
+dataset2.push(legend_d);
+"""
